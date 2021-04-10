@@ -1,0 +1,46 @@
+.f1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.f2 {
+  font-family: "Brush Script MT", Lucida Handwriting, cursive;
+}
+
+.imgSmall {
+  width: 50px;
+}
+
+.green {
+	background-color: green;
+}
+
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+			
+.margin {
+	margin: 20px;
+}
+	
+p.dotted {
+	border-style: dotted;
+}
+
+.floatR {
+  float: right;
+  padding: 15px; 
+}
+
+.rounded {
+  border: 2px solid black;
+  border-radius: 5px;
+}

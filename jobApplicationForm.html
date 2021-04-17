@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Project Partner-Matching Form</title>
+</head>
+<body>
+
+<h2>Project Partner-Matching Form</h2>
+
+<form action="http://gclass.alexburner.com/formtest.php" method="post">
+
+	<fieldset>
+		<legend>Student Account</legend>
+		<div class="field">
+			<label>Student Email:</label> 
+			<input type="text" name="email">
+		</div>
+		<div class="field">
+			<label>Password:</label> 
+			<input type="password" name="password">
+		</div>
+		<div class="field">
+			<label>Retype password:</label> 
+			<input type="password" name="password_r">
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Class Enrollment</legend>
+		<div class="field">
+			<label>Which lecture and quiz sections are you registered in?</label> 
+			<select name="lecture">
+				<option value="blank">----------</option>
+				<option value="a">A</option>
+				<option value="b">B</option>
+			</select>
+			<select name="quiz">
+				<option value="blank">----------</option>
+				<option value="aa">AA</option>
+				<option value="ab">AB</option>
+				<option value="ac">AC</option>
+				<option value="ba">BA</option>
+				<option value="bb">BB</option>
+				<option value="bc">BC</option>
+			</select>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Preferences</legend>
+		<div class="field">
+			<label>Would you like to work front-end or back-end?</label> 
+			<input type="radio" name="legal" value="front">Front-end
+			<input type="radio" name="legal" value="back">Back-end
+			<input type="radio" name="legal" value="either">No preference
+		</div>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Languages and Features</legend>
+		<div class="field">
+			<label>What kind of languages/features are you familar with? (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="position_pt" value="HTML">HTML</li>
+				<li><input type="checkbox" name="position_ft" value="JS">Javascript</li>
+				<li><input type="checkbox" name="position_tp" value="react">React</li>
+				<li><input type="checkbox" name="position_sl" value="none">None</li>
+			</ul>
+		</div>
+	</fieldset>
+	
+	<fieldset>
+		<div class="field">
+			<label>Hours available</label>
+			<table>
+				<tr>
+					<td></td>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<th>From</th>
+					<td><input type="time" size="5" name="su_from"></td>
+					<td><input type="time" size="5" name="mo_from"></td>
+					<td><input type="time" size="5" name="tu_from"></td>
+					<td><input type="time" size="5" name="we_from"></td>
+					<td><input type="time" size="5" name="th_from"></td>
+					<td><input type="time" size="5" name="fr_from"></td>
+					<td><input type="time" size="5" name="sa_from"></td>
+				</tr>
+				<tr>
+					<th>Until</th>
+					<td><input type="time" size="5" name="su_until"></td>
+					<td><input type="time" size="5" name="mo_until"></td>
+					<td><input type="time" size="5" name="tu_until"></td>
+					<td><input type="time" size="5" name="we_until"></td>
+					<td><input type="time" size="5" name="th_until"></td>
+					<td><input type="time" size="5" name="fr_until"></td>
+					<td><input type="time" size="5" name="sa_until"></td>
+				</tr>
+			</table>
+		</div>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Specific Partner</legend>
+		<div class="field">
+			<label>If there is any specific person you would like to partner with, enter their name below:</label><br>
+			<textarea name="specific_person" rows="6" cols="60"></textarea>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Additional Information</legend>
+		<div class="field">
+			<label>Is there anything else we should consider when matching you with a partner?</label><br>
+			<textarea name="anything_else" rows="6" cols="60"></textarea>
+		</div>
+	</fieldset>
+
+	<input type="submit" value="Submit form">
+	
+</form>
+</body>
+</html>
